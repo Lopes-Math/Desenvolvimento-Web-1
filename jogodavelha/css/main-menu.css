@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Noto+Serif+Gurmukhi:wght@300&family=Pacifico&display=swap');
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f7f7f7;
+    background-image: url("../img/background.png");
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 40px;
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+}
+
+.main-title h1 {
+    font-size: 700px;
+}
+
+.logo {
+    height: 300px;
+}
+
+.top-container {
+    display: grid;
+    grid-gap: 50px;
+    justify-items: center;
+    margin-bottom: 100px;
+}
+
+.button-mode {
+    font-family: 'Pacifico', cursive;
+    font-size: larger;
+    width: 270px;
+    height: 50px;
+    background-color: #F77985;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.button-mode:hover, .title:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.footer {
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    transition: 1s;
+    width: 100%;
+    height: 60px;
+    bottom: 0;
+}
+
+.designer {
+    color: #015941;
+}
+
+@media screen and (max-width: 940px) {
+    body {
+        background-image: url("/img/backgroundsemiresponsive.png")
+    }
+}
+
+@media screen and (max-width: 791px) {
+    body {
+        background-image: url("/img/backgroundresponsive.jpg");
+    }
+}

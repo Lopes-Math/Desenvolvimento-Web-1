@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="logo" href="../img/linkimg.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel='stylesheet' href='css/style.css'>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h1 class="main-title"><a href="main-menu.html" id="titleText"><p>Jogo da</p></a></h1>
+            <a href="main-menu.html"><img src="img/logo.png" class="logo" alt="logo"></a>
+        </div>  
+    </header>
+    <div class="top-container">
+        <button class="menuButton"><a href="main-menu.html">Menu</a></button>
+        <button id="restart" class="button"><a href="index.html">Reiniciar</a></button>
+    </div>
+    <div class="container">
+        <div class="side-panel">
+            <label for="player1" class="player-name" id="jogador1Text"><p>Jogador X:</p></label>
+            <input type="text" id="player1" placeholder="Nome do Jogador X" class="inputNome1">
+            <div class="scoreboard">
+                <p class="player1-wins">Vitórias: </p>
+                <span class="player1-wins" id="player1-wins">0</span>
+            </div>
+            <button onclick="player1Register()" id="elementcadPlayer1">Cadastrar</button>
+        </div>
+        <div>
+            <div class="roundCounter">
+                <p class="rodadaText">Rodada: </p>
+                <span class="rodadaCount" id="rodadaCount" class="button"><p>1</p></span>
+            </div>
+            <div id="game-board">
+                <div class="cell" id="0"></div>
+                <div class="cell" id="1"></div>
+                <div class="cell" id="2"></div>
+                <div class="cell" id="3"></div>
+                <div class="cell" id="4"></div>
+                <div class="cell" id="5"></div>
+                <div class="cell" id="6"></div>
+                <div class="cell" id="7"></div>
+                <div class="cell" id="8"></div>
+            </div>
+        </div>
+        <div class="side-panel">
+            <label for="player2" class="player-name" id="jogador2Text"><p>Jogador O:</p></label>
+            <input type="text" id="player2" placeholder="Nome do Jogador O" class="inputNome2">
+            <div class="scoreboard">
+                <p class="player2-wins">Vitórias: </p>
+                <span class="player2-wins" id="player2-wins">0</span>
+            </div>
+            <button onclick="player2Register()" id="elementcadPlayer2">Cadastrar</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer">
+            <p>Copyright &copy;2023 <br> Desenvolvido por <span class="designer">Matheus Lopes</span></p>
+        </div>
+    </footer>
+    <script src='js/main.js'></script>
+</body>
+</html>
